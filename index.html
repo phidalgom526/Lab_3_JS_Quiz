@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Lab 3: Quiz</title>
+
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+
+</head>
+
+<body>
+
+<div class="quiz">
+
+  <h1 class="title">Welcome to Class!</h1>
+  <p class="subtitle">Get to know you quiz</p>
+
+  <!-- Question 1 -->
+  <div class="question">
+    <p>1. Are we in California?</p>
+
+    <input type="radio" id="true" value="T" name="truth">
+    <label for="true">True</label>
+
+    <input type="radio" id="false" value="F" name="truth">
+    <label for="false">False</label>
+
+    <p id="feedback1"></p>
+    <img id="image1" class="feedback-image" alt="">
+  </div>
+
+
+  <!-- Question 2 -->
+  <div class="question">
+    <p>2. What is your name?</p>
+
+    <input id="basic-input" type="text" placeholder="Enter your name">
+
+    <p id="feedback2"></p>
+    <img id="image2" class="feedback-image" alt="">
+  </div>
+
+
+  <!-- Question 3 -->
+  <div class="question">
+    <p>3. Which one are you?</p>
+
+    <select id="status-input">
+      <option value="Faculty">Faculty</option>
+      <option value="Student">Student</option>
+      <option value="Visitor">Visitor</option>
+    </select>
+
+    <p id="feedback3"></p>
+    <img id="image3" class="feedback-image" alt="">
+  </div>
+
+
+  <!-- Question 4 -->
+  <div class="question">
+    <p>4. What is your age?</p>
+
+    <input id="age-input" type="number" placeholder="Enter your age">
+
+    <p id="feedback4"></p>
+    <img id="image4" class="feedback-image" alt="">
+  </div>
+
+
+  <!-- Question 5 - Multiple Choice -->
+  <div class="question">
+    <p>5. How are you feeling?</p>
+    <p class="small-text">Choose as many as you want!</p>
+
+    <div class="choices" id="mood-choices">
+
+      <label>
+        <input name="mood" type="checkbox" id="Happy" value="Happy">
+        Happy
+      </label>
+
+      <label>
+        <input name="mood" type="checkbox" id="Tired" value="Tired">
+        Tired
+      </label>
+
+      <label>
+        <input name="mood" type="checkbox" id="ok" value="ok">
+        Okay
+      </label>
+
+      <label>
+        <input name="mood" type="checkbox" id="Normal" value="Normal">
+        Normal
+      </label>
+
+    </div>
+
+    <p id="feedback5"></p>
+    <img id="image5" class="feedback-image" alt="">
+  </div>
+
+
+  <button id="submit-button">Submit Quiz</button>
+
+  <p id="score"></p>
+
+  <p id="message"></p>
+
+  <p id="times-taken"></p>
+
+</div>
+
+</body>
+
+</html>
